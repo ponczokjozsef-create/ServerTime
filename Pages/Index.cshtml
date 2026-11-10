@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Server Time";
+}
+
+<div class="text-center">
+    <h2>Welcome to my Server Time App!</h2>
+    <p>The current server time is:</p>
+    <h3>@Model.ServerTime</h3>
+
+    <form method="post">
+        <button type="submit" class="btn btn-primary">Refresh Time</button>
+    </form>
+</div>
